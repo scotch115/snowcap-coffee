@@ -2,37 +2,93 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App-navbar {
+	height: 75px;
+	width: 100%;
+	background-color: rgb(25,25,25);
+	position: absolute;
+	top: 0;
+	display: flex;
+	/* justify-content: center; */
+	align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App-navbar-item {
+	padding-left: 5%;
+	color: white;
+	transition: 0.5s;
+}
+
+.App-navbar-item:hover {
+	color: rgb(245, 219, 135);
+
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  /* background-color: rgb(245, 219, 135); */
+	background-color: #587838;
+  min-height: 70vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(25, 25, 25);
+	font-family: 'Raleway', sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+.App-image {
+	/* min-height: 20vh; */
+	flex: 1 0 0;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding-left: 25px;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	background-image: url("coffee.jpg");
+	background-position: center;
+	background-size: cover;
+	/* background-color: blue; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App-body {
+	/* min-height: 20vh; */
+	flex: 1 0 0;
+	display: flex;
+	flex-direction: column;
+	/* align-items: flex-end; */
+	padding: 1%;
+	justify-content: center;
+}
+
+.App-container {
+	display: flex;
+	flex-wrap: wrap;
+	height: 35vw;
+}
+
+.body-title {
+	font-size: 3vmin;
+	transition: 0.5s;
+}
+
+.body-content {
+	text-align: right !important;
+	font-size: 2.25vmin;
+}
+
+.title {
+	animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+	 0% {
+			 opacity: 0;
+	 }
+	 100% {
+			 opacity: 1;
+	 }
 }
